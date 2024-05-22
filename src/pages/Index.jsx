@@ -8,7 +8,8 @@ import {
   Text, 
   Checkbox, 
   IconButton, 
-  Heading 
+  Heading,
+  Box
 } from "@chakra-ui/react";
 import { FaTrash } from "react-icons/fa";
 
@@ -65,6 +66,9 @@ const Index = () => {
           ))}
         </VStack>
       </VStack>
+      <Box as="footer" w="100%" py={4} textAlign="center" mt={10} bg="gray.100">
+        <Text>© 2023 Todo App</Text>
+      </Box>
     </Container>
   );
 };
